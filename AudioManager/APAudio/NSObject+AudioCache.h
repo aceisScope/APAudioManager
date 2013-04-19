@@ -7,7 +7,6 @@
 //
 
 #import "APAudioManager.h"
-#import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MPMoviePlayerController.h>
 
 enum APAudioLoadingType

@@ -20,20 +20,7 @@ static char operationKey;
     self = [[NSObject alloc] init];
     
     if (loadingType == APAudioLoadByStreaming)
-    {
-//        dispatch_queue_t backgroundQueue = dispatch_queue_create("com.mycompany.myqueue", 0);
-//        
-//        dispatch_async(backgroundQueue, ^(void){
-//            NSData *soundData = [NSData dataWithContentsOfURL:url];
-//            AVAudioPlayer *avplayer = [[AVAudioPlayer alloc] initWithData:soundData error: nil];
-//            
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                if (completedPlayback) {
-//                    completedPlayback(nil,avplayer,outError);
-//                }
-//            });
-//        });
-    
+    {    
         
         if (completedPlayback) {
             
@@ -48,10 +35,7 @@ static char operationKey;
     else
     {
         AFHTTPRequestOperation *operation =  [[APAudioManager sharedManager] downloadWithURL:url CompletionBlockWithSuccess:^(NSString *audioPath, NSError *error, APAudioCacheType cacheType){
-            
-//            NSData *songFile = [[NSData alloc] initWithContentsOfURL:[NSURL fileURLWithPath:audioPath] options:NSDataReadingMappedIfSafe error:nil ];
-//            AVAudioPlayer *avplayer =  [[AVAudioPlayer alloc] initWithData:songFile error:nil];
-            
+                        
             if (completedPlayback) {
                 
                 MPMoviePlayerController *mvplayer = [[MPMoviePlayerController alloc]initWithContentURL:[NSURL fileURLWithPath:audioPath]];

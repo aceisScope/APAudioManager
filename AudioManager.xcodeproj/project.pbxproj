@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04405EDF1720EA6200AD0D72 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04405EDE1720EA6200AD0D72 /* AVFoundation.framework */; };
 		04405EE8172139DB00AD0D72 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04405EE7172139DB00AD0D72 /* MediaPlayer.framework */; };
 		04405EF017213EC800AD0D72 /* APAudioCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04405EEB17213EC800AD0D72 /* APAudioCache.m */; };
 		04405EF117213EC800AD0D72 /* APAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04405EED17213EC800AD0D72 /* APAudioManager.m */; };
@@ -38,7 +37,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04405EDE1720EA6200AD0D72 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		04405EE7172139DB00AD0D72 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		04405EEA17213EC800AD0D72 /* APAudioCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAudioCache.h; sourceTree = "<group>"; };
 		04405EEB17213EC800AD0D72 /* APAudioCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAudioCache.m; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04405EE8172139DB00AD0D72 /* MediaPlayer.framework in Frameworks */,
-				04405EDF1720EA6200AD0D72 /* AVFoundation.framework in Frameworks */,
 				0463A6CB171F951000F88337 /* MobileCoreServices.framework in Frameworks */,
 				0463A6C9171F950C00F88337 /* SystemConfiguration.framework in Frameworks */,
 				0463A684171F868600F88337 /* UIKit.framework in Frameworks */,
@@ -123,7 +120,6 @@
 				04405EE7172139DB00AD0D72 /* MediaPlayer.framework */,
 				0463A6CA171F951000F88337 /* MobileCoreServices.framework */,
 				0463A6C8171F950C00F88337 /* SystemConfiguration.framework */,
-				04405EDE1720EA6200AD0D72 /* AVFoundation.framework */,
 				0463A689171F868600F88337 /* AudioManager */,
 				0463A682171F868500F88337 /* Frameworks */,
 				0463A681171F868500F88337 /* Products */,
