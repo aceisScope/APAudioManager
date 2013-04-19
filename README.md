@@ -23,14 +23,16 @@ If loading type is streaming, audioPath will be nil, and a player instance will 
 If loading type is caching, then the programme will first check if the audio file exists on disk: if it does, a player initilised with file content will be generated immediately; 
 otherwise, it will download and save the audio first, then generate the player. Completionblock in this case will have the path of the downloaded audio file as the first parameter.
 
+Note MPMoviePlayerController is used in the demo, just for a convenience streaming- the actual type of player is not restricted
+
 
 **Parameters**
-*URL: The URL to the audio
-*loadingType: The type defined to stream or download&load from file system. Two types: APAudioLoadByStreaming and APAudioLoadFromCaching
-*completedPlayback: A block called when operation has been completed.
-1. This block as no return value and takes the downloaded audio's path in disk as first parameter.
-2. The second parameter is an instance of player initialised by URL either from a server or a file path
-3. In case of error the audioPath parameter is nil and the second parameter is nil. 
-4. The third parameter is an error output. 
+* URL: The URL to the audio
+* loadingType: The type defined to stream or download&load from file system. Two types: APAudioLoadByStreaming and APAudioLoadFromCaching
+* completedPlayback: A block called when operation has been completed.
+1.	This block as no return value and takes the downloaded audio's path in disk as first parameter.
+2.	The second parameter is an instance of player initialised by URL either from a server or a file path
+3.	In case of error the audioPath parameter is nil and the second parameter is nil. 
+4.	The third parameter is an error output. 
 
 
