@@ -17,7 +17,7 @@ enum APAudioCacheType
     /**
      * The audio was obtained from the disk cache.
      */
-    APAudioCacheDisk,
+    APAudioCacheDisk
 };
 typedef enum APAudioCacheType APAudioCacheType;
 

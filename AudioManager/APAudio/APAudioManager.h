@@ -62,9 +62,9 @@
  * @param completedBlockWithSuccess A block called when operation has been completed.
  *
  *                       This block as no return value and takes the requested audio's path in disk as first parameter.
- *                       In case of error the image parameter is nil and the second parameter may contain an NSError.
+ *                       In case of error the audioPath parameter is nil and the second parameter may contain an NSError.
  *
- *                       The third parameter is a Boolean indicating if the audio was retrived from the local cache
+ *                       The third parameter is an APAudioCacheType indicating if the audio was retrived from the local cache
  *                       of from the network.
  *
  * @return Returns an AFHTTPRequestOperation
